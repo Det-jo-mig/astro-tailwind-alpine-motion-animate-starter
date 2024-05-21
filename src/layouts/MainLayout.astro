@@ -13,13 +13,19 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
+<<<<<<< HEAD
 	<body class="grid lg:grid-cols-16 sm:grid-cols-10 bg-blue-500">
 
 		<header>
+=======
+	<body class="">
+		<header class="max-w-screen-xl mx-auto">
+>>>>>>> 1481413667e440453f121b3e79dab73851524164
 			<Header></Header>
 		</header>
+
 		
-		<main>
+		<main class="max-w-screen-xl mx-auto">
 			<slot />
 		</main>
 
