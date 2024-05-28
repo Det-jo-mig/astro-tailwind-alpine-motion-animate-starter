@@ -1,0 +1,63 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Event from "../components/event.astro";
+---
+
+<MainLayout title="People Like Us">
+  <h1 class="font-display hidden font-black lg:block text-pink-500 col-span-full text-center my-5 text-5xl">
+    People Like Us
+  </h1>
+  <div class="col-span-full relative">
+  <h2 class="font-display font-semibold text-blue-500 w-full text-center absolute text-xl lg:my-5 lg:text-5xl">
+    KASSER ER TIL ØL – IKKE TIL MENNESKER
+  </h2>
+  <video class="lg:mx-16" src="public/hero.mp4"></video>
+</div>
+  <h2 class="lg:ml-20 lg:text-5xl text-xl font-display font-semibold text-pink-500 col-span-full p-3">Vær en del af revolutionen</h2>
+  <h2 class="lg:px-0 lg:text-5xl lg:col-start-9 text-xl font-display font-semibold text-pink-500 col-span-full col-start-3 p-4">
+    Ses ved Jagtvej 135, 2200 Kbh N
+  </h2>
+  <section class="lg:ml-40 lg:col-span-8 text-blue-500 bg-pink-500 col-span-10 p-4 grid grid-cols-6">
+    <img class="col-start-6" src="public/flasker-l.svg" alt="">
+    <div class="row-start-1 col-start-2 col-span-4">
+    <h2 class="font-display font-semibold pb-3">#SOCIALREVOLUTIONBYBEER</h2>
+    <p class="font-sans text-sm ">
+      Vores øl er med til at skabe social forandring, fordi de bliver brygget,
+      tappet og serveret af mennesker som os: Et team af neurodivergente
+      mennesker forenet i et fællesskab, hvor forskellighed er en styrke, og
+      alle kan få lov at være anderledes.
+    </p>
+    <p class=" font-medium font-sans text-xs">Vi kalder det #SOCIALREVOLUTIONBYBEER</p>
+  </div>
+    <img class="mx-2 col-start-1 row-start-1 place-self-end" src="public/flasker-r.svg" alt="">
+    <Button variant="primary" size="small"> <a href="/omos">Om os</a></Button>  
+  </section>
+  <section
+    class="mt-8 pt-10 pb-24 bg-[url('/yellow-wobble.svg')] col-span-full w-screen bg-cover lg:h-90 lg:pb-60 lg:pt-20 lg:my-10"
+  >
+    <h2 class="text-xl font-display font-semibold text-blue-500 text-center my-4 scrollbar-color-red">Kommende events</h2>
+    <div class="mx-2 lg:grid lg:grid-cols-2 h-56 lg:h-80 overflow-scroll ">
+    <Event></Event>
+    <Event></Event>
+    <Event></Event>
+    <Event></Event>
+  </div>
+  </section>
+  <section class="lg:ml-40 lg:row-start-5 lg:col-start-9 lg:bg-yellow-200 lg:m-0 text-blue-500 bg-pink-500 col-span-10 p-4 my-5">
+    <div class="grid grid-cols-6 ">
+    <img class="col-start-6" src="public/hovede2.svg" alt="">
+    <div class="row-start-1 col-start-2 col-span-4">
+    <h2 class="text-xl font-display font-semibold pb-3">Book os</h2>
+    <p class="font-sans text-sm">
+      Vi leverer specialøl til jeres firmafest, fredagsbar eller konference. Vi
+      har alle typer af øl, på dåse eller fad, til mange eller få. Vi ruller
+      også gerne ud med vores mobile bar og enestående barteam og serverer med
+      personlighed, professionalisme og en unik historie.
+    </p>
+  </div>
+    <img class="col-start-1 row-start-1 place-self-end m-2" src="public/hovede1.svg" alt="">
+  </div>
+    <Button variant="primary" size="small">Book os</Button>
+  </section>
+</MainLayout>

@@ -1,0 +1,16 @@
+---
+import MainLayout from "./MainLayout.astro";
+const {frontmatter} = Astro.props;
+import Button from '../components/Button.astro';
+---
+<MainLayout title={frontmatter.title}>
+	
+	<h2 class="font-display text-3xl font-semibold uppercase text-pink-500 col-span-full text-center p-5">{frontmatter.title}</h2>
+	<div class="bg-[url('/yellow-wobble.svg')] grid grid-cols-10 col-span-10 mt-4 px-4 pt-14 pb-28 bg-cover bg-no-repeat">	
+		<img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="col-span-4 object-cover h-full"/>
+		<section class="font-sans font-medium text-xs col-span-6 col-start-5 pl-6 prose text-blue-500">
+			<slot class=""/>
+		</section>
+	</div>
+	<Button variant="tertiary" size="small"><a href="/voresol">Back</a></Button>
+</MainLayout>

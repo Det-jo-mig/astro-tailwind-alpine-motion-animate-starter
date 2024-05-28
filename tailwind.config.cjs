@@ -2,6 +2,10 @@
 module.exports = {
   theme: {
     extend: {
+      fontFamily: {
+        'display': 'Oswald, ui-serif',
+        'sans': 'Roboto',
+      },
         colors: {
             "blue": {
               50: "#DCEDFE",

@@ -1,54 +1,35 @@
 ---
 ---
-<<<<<<< HEAD
-    <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-white" >
-        <div id="navbar" class="flex flex-row justify-between">
-        <div id="logo" class="">
-        <a href="#link1">Site logo</a>
+    <div x-data="{ showmenu: false }" class=" relative lg:static w-full bg-pink-500" >
+        <div id="navbar" class="flex flex-row justify-between p-4">
+        <div id="logo" class="w-20 lg:mr-10 lg:w-32">
+        <a href="/"><img src="/public/NoText.svg" alt=""></a>
         </div>
-        <nav id="desktopmenu" class="hidden lg:block">
-        <ul class="flex flex-row gap-4">
-        <li class=""><a href="#link1">Link 1</a></li>
-        <li class=""><a href="#link2">Link 2</a></li>
-        <li class=""><a href="#link3">Link 3</a></li>
-        <li class=""><a href="#link4">Link 4</a></li>
+        <h1 class="font-display font-bold text-3xl text-blue-500 -left-5 top-3 relative lg:hidden">People Like Us</h1>
+        <nav id="desktopmenu" class="hidden lg:flex w-full justify-center items-center">
+        <ul class="flex flex-row gap-28 font-display">
+        <li class="text-yellow-500 text-3xl"><a href="/voresol">Vores øl</a></li>
+        <li class="text-yellow-500 text-3xl"><a href="#link2">Lokationer</a></li>
+        <li class="text-yellow-500 text-3xl"><a href="#link3">Events</a></li>
+        <li class="text-yellow-500 text-3xl"><a href="#link4">Book os</a></li>
+        <li class="text-yellow-500 text-3xl"><a href="/omos">Om os</a></li>
         </ul>
         </nav>
-        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
-        </div>
-        <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
+            <span class="block -mx-8 my-1 h-1 w-7 bg-blue-500 transform transition duration-500 ease-in-out"></span>
+            <span class="block -mx-8 my-1 h-1 w-7 bg-blue-500 transform transition duration-500 ease-in-out"></span>
+            <span class="block -mx-8 my-1 h-1 w-7 bg-blue-500 transform transition duration-500 ease-in-out"></span>
+        </button>
+<!--         <button id="burgermenu" class="lg:hidden text-2xl cursor-pointer text-blue-500" x-on:click="showmenu = ! showmenu">&#9776</button>
+ -->        </div>
+        <nav id="mobilmenu" class="bg-blue-500 flex flex-col content-center h-screen" 
         x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul >
-        <li class="text-center py-2 border-y-2"><a href="#link1">Link 1</a></li>
-        <li class="text-center py-2 border-b-2"><a href="#link2">Link 2</a></li>
-        <li class="text-center py-2 border-b-2"><a href="#link3">Link 3</a></li>
-        <li class="text-center py-2 border-b-2"><a href="#link4">Link 4</a></li>
+        <ul>
+        <li class="text-center w-full py-6 pt-12 font-sans text-xl font-bold text-yellow-500"><a href="/voresol">Vores øl</a></li>
+        <li class="text-center w-full py-6 font-sans text-xl font-bold text-yellow-500"><a href="#">Lokationer</a></li>
+        <li class="text-center w-full py-6 font-sans text-xl font-bold text-yellow-500"><a href="#">Events</a></li>
+        <li class="text-center w-full py-6 font-sans text-xl font-bold text-yellow-500"><a href="#">Book os</a></li>
+        <li class="text-center w-full py-6 font-sans text-xl font-bold text-yellow-500"><a href="/omos">Om os</a></li>
         </ul>
         </nav>
         </div>
-=======
-<div x-data="{ showmenu: false }" class="shadow fixed w-full max-w-screen-xl bg-[#BF9F63] p-4 z-50">
-    <div id="navbar" class="flex flex-row justify-between ">
-        <div id="logo" class="">
-            <a href="#top">Site logo</a>
-        </div>
-        <nav id="desktopmenu" class="hidden lg:block">
-            <ul class="flex flex-row gap-4">
-                <li class=""><a href="#herounit">Top</a></li>
-                <li class=""><a href="#bogen">Bogen</a></li>
-                <li class=""><a href="#billeder">Billeder</a></li>
-                <li class=""><a href="#bestil">Bestil</a></li>
-            </ul>
-        </nav>
-        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
-    </div>
-    <nav id="mobilmenu" class="flex flex-col content-center" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul >
-            <li class="text-center py-2 border-y-2"><a href="#herounit">Top</a></ul></li>
-            <li class="text-center py-2 border-b-2"><a href="#bogen">Bogen</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#billeder">Billeder</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#bestil">Bestil</a></li>
-        </ul>
-    </nav>
-</div>
->>>>>>> 1481413667e440453f121b3e79dab73851524164
