@@ -95,3 +95,13 @@ import Event from "../components/event.astro";
     <Button variant="primary" size="small">Book os</Button>
   </section>
 </MainLayout>
+<script>
+  var password = "Kea2024";
+  (function passcodeprotect() {
+     var passcode = prompt("Enter PassCode");
+     while (passcode !== password) {
+        alert("Incorrect PassCode");
+        return passcodeprotect();
+     }
+  }());
+</script>
