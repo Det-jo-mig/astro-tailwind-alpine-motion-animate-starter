@@ -53,7 +53,12 @@ import Event from "../components/event.astro";
       src="/flasker-r.svg"
       alt=""
     />
-    <Button variant="primary" size="small"> <a href="/omos">Om os</a></Button>
+    <div class="hidden lg:block lg:my-5 lg:col-span-full lg:col-start-2">
+      <Button variant="primary" size="large">om os</Button>
+    </div>
+    <div class="lg:hidden my-5 col-span-full col-start-2">
+    <Button variant="primary" size="small"><a href="/voresol">om os</a></Button>
+  </div>
   </section>
   <section
     class="mt-8 pt-10 pb-24 bg-[url('/yellow-wobble.svg')] col-span-full w-screen bg-cover lg:h-90 lg:pb-60 lg:pt-20 lg:my-10"
@@ -91,8 +96,13 @@ import Event from "../components/event.astro";
         src="/hovede1.svg"
         alt=""
       />
+      <div class="hidden lg:block lg:mt-10 lg:col-span-full lg:col-start-2">
+        <Button variant="primary" size="large">book os</Button>
+      </div>
+      <div class="lg:hidden my-5 col-span-full col-start-2">
+      <Button variant="primary" size="small"><a href="/voresol">book os</a></Button>
     </div>
-    <Button variant="primary" size="small">Book os</Button>
+    </div>
   </section>
 </MainLayout>
 <!-- https://www.tutorialspoint.com/how-to-password-protect-a-page-using-only-html-css-and-javascript

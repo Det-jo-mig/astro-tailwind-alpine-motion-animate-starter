@@ -7,17 +7,17 @@ const buttonStyling = " text-center";
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
 const variantClasses = {
-    "primary": "lg:text-lg lg:font-medium font-display hover:border-blue-500 active:border-yellow-200 border-4 border-yellow-500 text-blue-500 hover:text-yellow-500",
-    "secondary": "lg:text-lg lg:font-medium font-display border-blue-500 active:border-blue-200 border-4 hover:border-yellow-500 hover:text-blue-500 text-yellow-500",
-    "tertiary": " lg:text-lg lg:font-medium font-display hover:text-pink-500 hover:bg-blue-500 active:bg-pink-200 bg-pink-500 text-blue-500",
-    "quantriary": "lg:text-lg lg:font-medium font-display hover:text-yellow-500 hover:bg-pink-500 active:bg-yellow-200 bg-yellow-500 text-pink-600",
+    "primary": " font-display hover:border-blue-500 active:border-yellow-200 border-4 border-yellow-500 text-blue-500 hover:text-yellow-500",
+    "secondary": " font-display border-blue-500 active:border-blue-200 border-4 hover:border-yellow-500 hover:text-blue-500 text-yellow-500",
+    "tertiary": "  font-display hover:text-pink-500 hover:bg-blue-500 active:bg-pink-200 bg-pink-500 text-blue-500",
+    "quantriary": " font-display hover:text-yellow-500 hover:bg-pink-500 active:bg-yellow-200 bg-yellow-500 text-pink-600",
 };
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
 const sizeClasses = {
-    "large": "px-4",
-    "medium": "p-3 text-lg",
-    "small": "text-sm px-2 my-5"
+    "large": "font-black text-xl px-5 py-1 py-auto",
+    "medium": "font-black text-sm p-3 text-lg",
+    "small": "font-black text-base px-3"
 };
 ---
 <!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
