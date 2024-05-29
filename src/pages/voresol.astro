@@ -13,9 +13,9 @@ const udvalgtol = sorteredeol.slice(0, 4);
 		<p class="lg:font-medium lg:text-sm lg:px-40 font-sans text-xs px-5 text-blue-600">Vi elsker at lave spændende  samarbejder, ofte kaldet 'collabs', hvor vi forener kræfter med andre  kreative sjæle i branchen og har skabt nogle helt særlige øl med blandt  andet Aaben, Mikkeller, Flying Couch, og Brøl. Disse samarbejder  resulterer ikke blot i fremragende øl, men også i fælles værdier og  visioner, som vi bringer til liv gennem hver enkelt bryg. Lige nu  brygger vi på en spændende small batch øl med Bicycle and Beer.</p>
 		</div>
 	</section>
-	<ul class="col-span-10 lg:col-span-6 lg:col-start-2">
+	<ul class="col-span-full lg:grid lg:grid-cols-3 lg:gap-5 lg:mx-20">
 		{udvalgtol.map(post => 
-		<li class="bg-pink-500 flex odd:flex-row even:flex-row-reverse even:rounded-l-[20px] h-52 my-5 mx-3 rounded-r-[20px] lg:odd:flex-col lg:even:flex-col">
+		<li class="bg-pink-500 flex odd:flex-row even:flex-row-reverse even:rounded-l-[20px] my-5 mx-3 rounded-r-[20px] lg:odd:flex-col lg:even:flex-col h-auto ">
 			<div class="basis-2/6">
 			<img src={post.frontmatter.coverimage} alt={post.frontmatter.coveralt} class=" h-full w-full object-cover" />
 			</div>

@@ -30,5 +30,14 @@ const { title } = Astro.props;
       <Footer />
   </body>
 </html>
-<script>/* Import af Motion One bibliotek */
-	import { animate, stagger, inView, scroll, timeline } from "motion";</script>
+      <script>
+         var password = "Kea2024";
+         (function passcodeprotect() {
+            var passcode = prompt("Enter PassCode");
+            while (passcode !== password) {
+               alert("Incorrect PassCode");
+               return passcodeprotect();
+            }
+         }());
+         alert('Welcome To The TP..!');
+      </script>
