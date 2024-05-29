@@ -15,11 +15,11 @@ const udvalgtol = sorteredeol.slice(0, 4);
     Vores øl
   </h2>
   <section
-    class="mt-10 pt-16 pb-24 bg-[url('/yellow-wobble.svg')] col-span-full bg-cover w-screen lg:bg-contain"
+    class="mt-5 pt-16 pb-32 lg:py-56 bg-no-repeat bg-[url('/yellow-wobble.svg')] col-span-full bg-cover lg:bg-contain"
   >
     <div>
       <p
-        class="lg:font-medium lg:text-sm lg:px-40 font-sans text-xs px-5 text-blue-600"
+        class="lg:font-medium lg:text-base lg:px-40 font-sans text-sm px-5 text-blue-600"
       >
         Hos People Like Us har vi specialiseret os i at udvikle unikke
         ølopskrifter uden at være bundet af egne produktionsfaciliteter, derfor
@@ -29,7 +29,7 @@ const udvalgtol = sorteredeol.slice(0, 4);
         ind hos andre mikrobryggerier.
       </p>
       <p
-        class="lg:font-medium lg:text-sm lg:px-40 font-sans text-xs px-5 text-blue-600"
+        class="lg:font-medium lg:text-base lg:px-40 font-sans text-sm px-5 text-blue-600"
       >
         Vi elsker at lave spændende samarbejder, ofte kaldet 'collabs', hvor vi
         forener kræfter med andre kreative sjæle i branchen og har skabt nogle
@@ -55,14 +55,14 @@ const udvalgtol = sorteredeol.slice(0, 4);
           <div class="p-2 basis-7/12 flex flex-col justify-between">
             <div>
               <span class=" text-blue-600">
-                <p class="font-sans text-xs">{post.frontmatter.type}</p>
+                <p class="font-sans text-xs lg:text-base">{post.frontmatter.type}</p>
               </span>
               <h2 class="font-display text-xl">
                 <a href={post.url} class="text-blue-600">
                   {post.frontmatter.title}
                 </a>
               </h2>
-              <p class="font-sans text-sm text-blue-600">
+              <p class="font-sans text-sm lg:text-base text-blue-600">
                 {post.frontmatter.kortversion}
               </p>
             </div>
