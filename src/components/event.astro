@@ -2,18 +2,18 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
-<div class="grid grid-cols-4 border-2 border-pink-500 my-5 pr-4 lg:mx-3">
+<div class="grid grid-cols-4 border-2 border-pink-500 my-5 lg:border-4 lg:mx-3">
 <div>
-    <img class="h-full pr-2" src="/olsmagning.webp" alt="">
+    <img class="h-full" src="/olsmagning.webp" alt="">
 </div>
-<div class="grid-start-2 col-span-2 text-blue-500" >
+<div class="grid-start-2 col-span-2 text-blue-500 pl-2" >
     <h3 class="font-display text-lg lg:text-2xl text-blue-600">Ølsmagning</h3>
     <p class="font-sans text-xs lg:text-base">16. Maj</p>
     <p class="font-sans text-xs lg:text-base">17:00</p>
     <p class="font-sans text-xs lg:text-base">Amagercentret | People Like Us Bar</p>
 </div>
 <div class="hidden lg:block lg:my-10 lg:mx-auto">
-    <Button variant="tertiary" size="medium">Køb billetter</Button>
+    <Button variant="tertiary" size="large">Køb billetter</Button>
   </div>
   <div class="lg:hidden my-5 mx-auto">
   <Button variant="tertiary" size="small">Køb billetter</Button>

@@ -8,7 +8,7 @@ import Button from '../components/Button.astro';
 	<h2 class="font-display text-3xl font-semibold uppercase text-pink-500 col-span-full text-center p-5">{frontmatter.title}</h2>
 	<div class="bg-[url('/yellow-wobble.svg')] grid grid-cols-10 col-span-full mt-4 px-4 pt-14 pb-28 bg-cover bg-no-repeat lg:pt-32">	
 		<img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="col-span-4 object-cover w-auto h-5/6 lg:h-3/4 lg:ml-14"/>
-		<section class="font-sans font-medium text-xs col-span-6 col-start-5 pl-6 prose text-blue-500 lg:text-base lg:px-12">
+		<section class="font-sans font-medium text-xs col-span-6 col-start-5 pl-6 prose text-blue-600 lg:text-base lg:px-12">
 			<slot class=""/>
 		</section>
 	</div>
